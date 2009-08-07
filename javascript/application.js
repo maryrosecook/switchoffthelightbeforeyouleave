@@ -6,8 +6,7 @@ function setupInitialSwitchState()
 		turnOn();
 	
 	setupCookies();
-	
-	var totalOff = getTotalOff();
+	//setupReadout();
 }
 
 function toggleSwitch(e, image)
@@ -35,6 +34,16 @@ function toggleSwitch(e, image)
 			setCookie(getLastOffCookieName(), -1, 999);
 		}
 	}
+}
+
+function setupReadout()
+{
+	var hundredWattLightbulbWattsPerSecond = 876 / 24 / 60;
+	var totalOff = getTotalOff();
+	var energySavedKWH = (hundredWattLightbulbWattsPerSecond * totalOff) / 1000;
+	var energySavedKWHRounded = Math.round(energySavedKWH * 100) / 100;
+
+	$('#readout').html(energySavedKWHRounded);
 }
 
 function turnOff()
