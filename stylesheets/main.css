@@ -5,14 +5,15 @@ input,form,h1,h2 { display:inline; }
 body { font-family:'helvetica', 'arial'; font-size:14px; }
 p { font-family:'helvetica', 'arial'; font-size:14px; }
 
-a { color:#ffff99; text-decoration:underline; }
-a:visited { color:#ffff99; }
-a:hover { color:#ffff99; text-decoration:none; }
+a { color:#bbb; text-decoration:underline; }
+a:visited { color:#bbb; }
+a:hover { color:#bbb; text-decoration:none; }
 
 /* special */
 
-.switch { margin-left:200px; margin-top:0px; margin-bottom:0px; padding:0px; }
+.switch { margin-left:200px; margin-top:0px; margin-bottom:0px; padding:0px; float:left;}
 .on { background-color:#ffff99; }
 .off { background-color:#222; }
 .readout { color:#ffff99; font-size:20px; }
-.info { color:#ffff99; text-align:right; }
+.more_information_link { color:#bbb; text-align:right; }
+.more_information { color:#bbb; text-align:justify; padding-top:50px; padding-right:300px; }

@@ -53,6 +53,8 @@ function turnOff()
 	$('body').removeClass('on');
 	$('body').addClass('off');
 	setCookie(getSwitchStateCookieName(), 'off', 999);
+	$('#more_information_link').show();
+	//$('#more_information').hide();
 }
 
 function turnOn()
@@ -62,6 +64,8 @@ function turnOn()
 	$('body').removeClass('off');
 	$('body').addClass('on');
 	setCookie(getSwitchStateCookieName(), 'on', 999);
+	$('#more_information_link').hide();
+	$('#more_information').hide();
 }
 
 function getTotalOff()
@@ -95,6 +99,8 @@ function setupCookies()
 function getSwitchStateCookieName() { return 'switch'; }
 function getLastOffCookieName() { return 'last_off'; }
 function getConfirmedOffCookieName() { return 'confirmed_off'; }
+
+function showMoreInformation() { $('#more_information').show(); }
 
 function setCookie(c_name,value,expiredays)
 {

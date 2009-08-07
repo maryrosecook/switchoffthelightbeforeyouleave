@@ -14,23 +14,27 @@
 				setupInitialSwitchState();
 			});
 		</script>
-		
 	</head>
 
 	<body>
 		
-		<div class="info">
-			made by <a href='http://maryrosecook.com'>maryrosecook</a>, 
-			<a href='http://github.com/maryrosecook/switchoffthelightbeforeyouleave'>code</a>
+		<div id="more_information_link" class="more_information_link">
+			<a href="#" onclick="showMoreInformation();">more information</a>
 		</div>
 		
 		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-		<p class="switch">
+		<span class="switch">
 			<span id="on_image"><img onclick="toggleSwitch(event, this);" src="images/on.gif" alt="Light switch on" ></span>
 			<span id="off_image"><img onclick="toggleSwitch(event, this);" src="images/off.gif" alt="Light switch off"></span>
-		</p>
+		</span>
 
-
+		<div id="more_information" class="more_information">
+			I know the dark is scary, but switch off the light when you leave the room.
+			<br/><br/>
+			
+			<a href='http://github.com/maryrosecook/switchoffthelightbeforeyouleave'>code</a>
+			by <a href='http://maryrosecook.com'>maryrosecook</a>
+		</div>
 
 
 
