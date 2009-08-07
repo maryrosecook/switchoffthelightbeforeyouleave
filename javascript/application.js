@@ -54,7 +54,7 @@ function turnOff()
 	$('body').addClass('off');
 	setCookie(getSwitchStateCookieName(), 'off', 999);
 	$('#more_information_link').show();
-	//$('#more_information').hide();
+	$('#more_information').hide();
 }
 
 function turnOn()
