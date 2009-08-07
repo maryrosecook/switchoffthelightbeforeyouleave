@@ -8,7 +8,6 @@ function setupInitialSwitchState()
 	setupCookies();
 	
 	var totalOff = getTotalOff();
-	alert(totalOff);
 }
 
 function toggleSwitch(e, image)
