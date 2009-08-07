@@ -55,6 +55,7 @@ function turnOff()
 	setCookie(getSwitchStateCookieName(), 'off', 999);
 	$('#more_information_link').show();
 	$('#more_information').hide();
+	$('#more_information_link_spacer').hide();
 }
 
 function turnOn()
@@ -66,6 +67,7 @@ function turnOn()
 	setCookie(getSwitchStateCookieName(), 'on', 999);
 	$('#more_information_link').hide();
 	$('#more_information').hide();
+	$('#more_information_link_spacer').show();
 }
 
 function getTotalOff()
