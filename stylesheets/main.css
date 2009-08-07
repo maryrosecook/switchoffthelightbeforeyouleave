@@ -1,0 +1,19 @@
+/* generic */
+
+div,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table{ margin:0; padding:0; }
+input,form,h1,h2 { display:inline; }
+body { font-family:'Lucida Sans Unicode', 'Lucida Grande'; font-size:12px; }
+p { font-family:'Lucida Sans Unicode', 'Lucida Grande'; font-size:12px; }
+
+a { color:#990000; text-decoration:none; }
+a:visited { color:#990000; }
+a:hover { color:#cc0000; text-decoration:none; }
+
+h1 { font-size: 22px; font-weight:normal; line-height:22px; }
+h2 { font-size: 20px; font-weight:normal; line-height:20px;}
+
+/* special */
+
+.switch { margin-left:200px; margin-top:0px; margin-bottom:0px; padding:0px; }
+.on { background-color:#ffff99; }
+.off { background-color:#222; }
